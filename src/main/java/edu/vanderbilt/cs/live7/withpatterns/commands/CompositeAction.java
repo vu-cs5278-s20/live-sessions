@@ -1,11 +1,11 @@
-package edu.vanderbilt.cs.live7.withcommand.commands;
+package edu.vanderbilt.cs.live7.withpatterns.commands;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import edu.vanderbilt.cs.live7.withcommand.Action;
-import edu.vanderbilt.cs.live7.withcommand.Result;
+import edu.vanderbilt.cs.live7.withpatterns.Action;
+import edu.vanderbilt.cs.live7.withpatterns.Result;
 
 public class CompositeAction implements Action {
 

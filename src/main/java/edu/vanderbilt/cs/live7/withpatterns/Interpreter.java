@@ -1,4 +1,4 @@
-package edu.vanderbilt.cs.live7.withcommand;
+package edu.vanderbilt.cs.live7.withpatterns;
 
 public interface Interpreter {
 
