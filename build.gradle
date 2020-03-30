@@ -8,7 +8,9 @@
 
 plugins {
     // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
 }
 
 repositories {
@@ -25,6 +27,15 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.2'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.2'
     
-    // Use JUnit test framework
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	
+	// Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+}
+
+test {
+	useJUnitPlatform()
 }
